@@ -1,0 +1,7 @@
+<div #waveform></div>
+
+<div>
+    <button *ngIf="!isPlaying" (click)="playAudio()">Play</button>
+    <button *ngIf="isPlaying" (click)="pauseAudio()">Pause</button>
+    <button (click)="stopAudio()">Stop</button>
+</div>
